@@ -1,0 +1,5 @@
+<view hidden='{{hidden}}' class='mc_movie'>
+  <image class='mc_movie_main_img' src="{{img}}" />
+  <image class='tag' src='./images/movie@tag.png' />
+  <text>{{content}}</text>
+</view>

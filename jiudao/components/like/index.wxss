@@ -1,0 +1,24 @@
+/* components/like/index.wxss */
+.mc_like{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10rpx;
+
+}
+.mc_like image{
+  width: 33rpx;
+  height: 32rpx;
+}
+.mc_like text{
+  font-size: 25rpx;
+  line-height: 25rpx;
+  color: #bbb;
+  /* font-family: "PingFangSC-Thin"; */
+  position: relative;
+  bottom: 3rpx;
+  left: 8rpx;
+
+}
+
+
+

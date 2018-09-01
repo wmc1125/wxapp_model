@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='header'>
+    <view class='box'>
+      <image src='/images/icon/search.png'></image>
+      <text>搜搜书籍</text>
+    </view>
+  </view>
+
+  <view class='sub-container'>
+    <image class='head-img' src='/images/book/quality.png'></image>
+    <view class='books-container'>
+      <block wx:key="id" wx:for="{{books}}"> 
+        <v-book book="{{item}}"  />
+      </block>
+      <!-- wx:key
+      如果遍历的是object key值为不重复的数字或字符串  wx:key="id"
+      如果遍历的是数字或字符串   wx:key="*this"
+       -->
+    </view>
+  </view>
+
+</view>

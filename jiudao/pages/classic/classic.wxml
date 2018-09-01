@@ -1,0 +1,14 @@
+<!--pages/classic/classic.wxml-->
+<view class='container'>
+  <view class='header'>
+    <v-epsoide class="epsoide" index="{{classicData.index}}" />
+    <!-- 组件中的事件要激活 -->
+    <v-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+  </view>
+
+  <v-movie hidden="{{classicData.type!=100}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+  <v-music wx:if="{{classicData.type==200}}" img="{{classicData.image}}" content="{{classicData.content}}" src="{{classicData.url}}" />
+  <v-essay hidden="{{classicData.type!=300}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+
+  <v-navi class="navi" bind:left="onNext" bind:right="onPre" title="{{classicData.title}}" first="{{first}}" latest="{{latest}}" />
+</view>
